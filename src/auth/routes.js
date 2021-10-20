@@ -7,7 +7,7 @@ const { users } = require('./models/index.js');
 const basicAuth = require('./middleware/basic.js')
 const bearerAuth = require('./middleware/bearer.js');
 
-authRouter.get('/', (req, res, next) => {
+authRouter.get('/', (req, res) => {
   res.status(200).send('Hello World')
 })
 
